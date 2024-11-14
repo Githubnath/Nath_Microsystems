@@ -1,10 +1,15 @@
-# Personal Portfolio Website
 
-This repository contains the source code and files for my personal portfolio website. The website is built using HTML, CSS, and JavaScript.
+## About US
+Nath Microsystems is a tech firm; that offers a wide range of affordable web design, software development and marketing services. Nath Microsystems develops, design and deploy websites and software applications. Such as: Responsive websites, E - commerce websites, Block chain websites etc.<br><br>My duties include; development and deployment of software applications, Testing and improving the design of websites, maintaining the appearance of websites by enforcing content standards, designing visual imagery for websites and ensuring that they are in line with branding for clients
+
+
+# Portfolio
+
+This Website it one of our projects, in this  repository, you get the source code and files for this  website. The website is built using HTML, CSS, and JavaScript.
 
 ## Description
 
-The personal portfolio website showcases my skills, projects, and experiences as a web developer. It serves as an online platform to highlight my work and provide information about my background and expertise.
+This  website showcases our skills, projects, and experiences as a web development firm. It serves as an online platform to highlight our work and provide information about our  background and expertise.
 
 ## Features
 
