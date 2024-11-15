@@ -1,12 +1,12 @@
 
 ## About US
 
-Nath Microsystems is a tech firm; that offers a wide range of affordable web design, software development and marketing services. Nath Microsystems develops, design and deploy websites and software applications. Such as: Responsive websites, E - commerce websites, Block chain websites etc.<br><br>My duties include; development and deployment of software applications, Testing and improving the design of websites, maintaining the appearance of websites by enforcing content standards, designing visual imagery for websites and ensuring that they are in line with branding for clients
+Nath Microsystems is a tech firm; that offers a wide range of affordable web design, software development and marketing services. Nath Microsystems develops, design and deploy websites and software applications. Such as: Responsive websites, E - commerce websites, Block chain websites etc.<br><br>Our Services include; development and deployment of software applications, Testing and improving the design of websites, maintaining the appearance of websites by enforcing content standards, designing visual imagery for websites and ensuring that they are in line with branding for clients
 
 
 ## Porfolio
 
-This Website it one of our projects, in this  repository, you get the source code and files for this  website. The website is built using HTML, CSS, and JavaScript.
+This Website it one of our projects; In this repository, you get the source code and files for this  website. The website is built using HTML, CSS, and JavaScript.
 
 ## Description
 
@@ -36,12 +36,10 @@ To view the website locally or make modifications, follow these steps:
 
 ## Contributing
 
-We appreciate any suggestions, feedback, or contributions to enhance this on  website. If you would like to contribute, please follow the guidelines in the `CONTRIBUTING.md` file.
+We appreciate any suggestions, feedback, or contributions to enhance  on this  website. If you would like to contribute, please follow the guidelines in the `CONTRIBUTING.md` file.
 
 ## Contact
 
 If you have any questions or inquiries, please feel free to reach out to us  through the contact information provided in the website or by using the contact form.
 
 Thank you for visiting! Hope you found it informative and visually appealing.
-drop yourpicture link here
-![Portfolio](https://github.com/Venkateeshh/Portfolio-Website/assets/117290841/d05942e3-6970-47eb-975
