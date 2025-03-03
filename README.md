@@ -42,4 +42,4 @@ We appreciate any suggestions, feedback, or contributions to enhance  on this  w
 
 If you have any questions or inquiries, please feel free to reach out to us  through the contact information provided in the website or by using the contact form.
 
-Thank you for visiting! Hope you found it informative and visually appealing.
+Thank you for visiting! Hope you found it informative and visually appealing..
