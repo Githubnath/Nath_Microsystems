@@ -2,7 +2,7 @@
 const pages = {
     home: `
         <h1>Welcome to Nath Microsystems, your ultimate Web development company in Nigeria</h1>
-        <img src="https://github.com/Githubnath/Nath_Microsystems/blob/main/images/home.jpg" alt="Github image">
+        <img src="images/home.jpg" alt="Home">
         <p>We provide top-notch services to our clients worldwide.</p>
     `,
     about: `
@@ -12,7 +12,7 @@ const pages = {
     `,
     services: `
         <h1>Our Services</h1>
-        <img src="images/services.jpg" alt="Services">
+        <img src="images/service1.jpg" alt="Services">
         <ul>
             <li>Web Development</li>
             <li>Graphic Design</li>
@@ -21,17 +21,17 @@ const pages = {
     `,
     portfolio: `
         <h1>Our Portfolio</h1>
-        <img src="images/portfolio.jpg" alt="Portfolio">
+        <img src="images/portfolio1.PNG" alt="Portfolio">
         <p>Check out some of our best projects.</p>
     `,
     pricing: `
         <h1>Pricing Plans</h1>
-        <img src="images/pricing.jpg" alt="Pricing">
+        <img src="images/service2.jpg" alt="Pricing">
         <p>We offer affordable pricing for all businesses.</p>
     `,
     blog: `
         <h1>Our Blog</h1>
-        <img src="images/blog.jpg" alt="Blog">
+        <img src="images/portfolio2.jpg" alt="Blog">
         <p>Read our latest industry insights.</p>
     `,
     contact: `
