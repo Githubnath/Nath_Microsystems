@@ -7,8 +7,11 @@ const pages = {
     `,
     about: `
         <h1>About Us</h1>
-        <img src="images/about.jpg" alt="About Us">
-        <p>We have been in the industry for over 10 years.</p>
+       <img src="images/service4.PNG" alt="About">
+       <img src="images/about.jpg" alt="About Us">
+        <p>Nath Microsystems is a tech firm; which offer a wide range of affordable web design, software development and marketing services. Nath Microsystems develops, design and deploy websites and software applications. Such as: Responsive websites, E - commerce websites, Block chain websites etc. Our services include; development and deployment of software applications, Testing and improving the design of websites, maintaining the appearance of websites by enforcing content standards, designing visual imagery for websites and ensuring that they are in line with branding for clients.
+
+Nath Microsystems is a tech firm established in 2015 and managed by a team of dedicated professionals led by Engr Emenike Nathaniel (Founder/CEO). Over the years, the company has grown to become a high caliber website, Mobile Apps and Business Software Development power-house; serving both local and international clients. Our passion for technology and our expertise in harnessing the plethora of ways by which it can transform business has enable us to deliver incredible customer experiences. Start your next project with us today....A trial will convince you.</p>
     `,
     services: `
         <h1>Our Services</h1>
