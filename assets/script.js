@@ -26,12 +26,12 @@ const pages = {
     `,
     pricing: `
         <h1>Pricing Plans</h1>
-        <img src="images/service2.jpg" alt="Pricing">
+        <img src="images/service3.PNG" alt="Pricing">
         <p>We offer affordable pricing for all businesses.</p>
     `,
     blog: `
         <h1>Our Blog</h1>
-        <img src="images/portfolio2.jpg" alt="Blog">
+        <img src="images/portfolio2.PNG" alt="Blog">
         <p>Read our latest industry insights.</p>
     `,
     contact: `
