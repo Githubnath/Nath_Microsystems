@@ -2,7 +2,7 @@
 const pages = {
     home: `
         <h1>Welcome to Nath Microsystems, your ultimate Web development company in Nigeria</h1>
-        <img src="https://github.com/Githubnath/Nath_Microsystems/blob/main/images/home.jpg" alt="home image">
+        <img src="images/home.jpg" alt="home">
         <p>We provide top-notch services to our clients worldwide.</p>
     `,
     about: `
