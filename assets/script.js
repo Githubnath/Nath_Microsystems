@@ -1,8 +1,8 @@
 // Content for different pages
 const pages = {
     home: `
-        <h1>Welcome to Our Company</h1>
-        <img src="images/home.jpg" alt="Company Image">
+        <h1>Welcome to Nath Microsystems, your ultimate Web development company in Nigeria</h1>
+        <img src="https://github.com/Githubnath/Nath_Microsystems/blob/main/images/home.jpg" alt="home image">
         <p>We provide top-notch services to our clients worldwide.</p>
     `,
     about: `
