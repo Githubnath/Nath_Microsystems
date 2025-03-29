@@ -2,9 +2,12 @@
 const pages = {
     home: `
         <h1>Welcome To Nath Microsystems</h1>
-	<h2>Your Ultimate Web Development Company In Nigeria</h2>
+	<h2>Top Web Development Company: Elevating Your Digital Presence
+</h2>
         <img src="images/home.jpg" alt="Home">
-        <p>We build future-proof and innovative solutions to foster your startup’s growth.Speed up your business growth with our full range of customer-centric, high-performance web development services in the Nigeria.
+        <p>We build future-proof and innovative solutions to foster your startup’s growth.Speed up your business growth with our full range of customer-centric, high-performance web development services in the world.
+Nath Microsystems transforms vision into seamless web experiences so your website can compete well within the current industry. As the best web development company in Nigeria, we guarantee to get you more customers and help you grow faster.
+
 	What makes us a leading web development company in the Nigeria? It is a combination of technical expertise, hands-on experience, cutting-edge technology, and diverse web development services.
 We thrive in the highly competitive digital landscape by following transparent, DevOps-based, client-centric approaches to deliver high-performing quality web apps and solutions. Partner with us to fulfill your digital aspirations and make a significant impact in the Nigeria’s digital arena.
 </p>
@@ -18,7 +21,8 @@ Our focus is to create digital products that generates lasting value for your bu
         <h1>About Us</h1>
        <img src="images/service4.PNG" alt="About">
        <img src="images/about.jpg" alt="About Us">
-        <p>Nath Microsystems is a tech firm; which offer a wide range of affordable web design, software development and marketing services. We  develops, design and deploy websites and software applications. Such as: Responsive websites, E - commerce websites, Block chain websites etc. Our services include; development and deployment of software applications, Testing and improving the design of websites, maintaining the appearance of websites by enforcing content standards, designing visual imagery for websites and ensuring that they are in line with branding for clients.
+        <p>Nath Microsystems is a tech firm; which offer a wide range of affordable web design, software development and marketing services. We  develop, design and deploy websites and software applications. Such as: Responsive websites, E - commerce websites, Block chain websites etc. Our services include; development and deployment of software applications, Testing and improving the design of websites, maintaining the appearance of websites by enforcing content standards, designing visual imagery for websites and ensuring that they are in line with branding for clients.
+
 Nath Microsystems was  established in 2015 and managed by a team of dedicated professionals led by Engr Emenike Nathaniel (Founder/CEO). Over the years, the company has grown to become a high caliber website, Mobile Apps and Business Software Development power-house; serving both local and international clients. Our passion for technology and our expertise in harnessing the plethora of ways by which it can transform business has enable us to deliver incredible customer experiences. Start your next project with us today....A trial will convince you.</p>
     `,
     services: `
