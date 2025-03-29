@@ -16,8 +16,14 @@ We thrive in the highly competitive digital landscape by following transparent, 
 
 <p> We’re more than just a software development company — we’re your digital product development and system integration partner.
 Our focus is to create digital products that generates lasting value for your business. Because we don’t just write code, we find the most innovative solutions to your unique problems, as well as your greatest dreams.</p>
-    `,
-    about: `
+    
+<h1>Get Our High-Performing Web Application Development Solution to Scale Your Business</h1>
+<h4>As the top website development company in Nigeria & Africa, we create web solutions that are ready to RACE (Reach, Attract, Communicate, and Engage) your audience. We use the right tech stacks and focus on building fully functional web applications that help you achieve maximum growth. Our end goal is to create quality web apps at a low cost that aligns with your business objectives.</h4>
+
+<button class="cta-button"
+data-action="contact">Contact Us</button>
+
+about: `
         <h1>About Us</h1>
        <img src="images/service4.PNG" alt="About">
        <img src="images/about.jpg" alt="About Us">
