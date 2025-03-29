@@ -20,9 +20,6 @@ Our focus is to create digital products that generates lasting value for your bu
 <h1>Get Our High-Performing Web Application Development Solution to Scale Your Business</h1>
 <h4>As the top website development company in Nigeria & Africa, we create web solutions that are ready to RACE (Reach, Attract, Communicate, and Engage) your audience. We use the right tech stacks and focus on building fully functional web applications that help you achieve maximum growth. Our end goal is to create quality web apps at a low cost that aligns with your business objectives.</h4>
 
-<button class="cta-button"
-data-action="contact">Contact Us</button>
-
 about: `
         <h1>About Us</h1>
        <img src="images/service4.PNG" alt="About">
