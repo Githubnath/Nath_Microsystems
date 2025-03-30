@@ -1,4 +1,58 @@
 // Content for different pages
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to load content dynamically
+    function loadPage(page) {
+        const content = document.getElementById("content");
+
+        if (page === "services" || page === "pricing" || page === "portfolio") {
+            content.innerHTML = `
+                <section class="container">
+                    <div class="box">
+                        <h3>Heading 1</h3>
+                        <img src="image1.jpg" alt="Image 1">
+                        <p>Description for box 1.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Heading 2</h3>
+                        <img src="image2.jpg" alt="Image 2">
+                        <p>Description for box 2.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Heading 3</h3>
+                        <img src="image3.jpg" alt="Image 3">
+                        <p>Description for box 3.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Heading 4</h3>
+                        <img src="image4.jpg" alt="Image 4">
+                        <p>Description for box 4.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Heading 5</h3>
+                        <img src="image5.jpg" alt="Image 5">
+                        <p>Description for box 5.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Heading 6</h3>
+                        <img src="image6.jpg" alt="Image 6">
+                        <p>Description for box 6.</p>
+                    </div>
+                </section>
+            `;
+        }
+    }
+
+    // Simulate navigation - Example: listen for menu clicks
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const page = this.getAttribute("data-page");
+            loadPage(page);
+        });
+    });
+});
+
 const pages = {
     home: `
         <h1>Welcome to Nath Microsystems</h1>
@@ -15,24 +69,7 @@ const pages = {
 Nath Microsystems is a tech firm established in 2015 and managed by a team of dedicated professionals led by Engr Emenike Nathaniel (Founder/CEO). Over the years, the company has grown to become a high caliber website, Mobile Apps and Business Software Development power-house; serving both local and international clients. Our passion for technology and our expertise in harnessing the plethora of ways by which it can transform business has enable us to deliver incredible customer experiences. Start your next project with us today....A trial will convince you.
 </p>
     `,
-    services: `
-        <h1>Our Services</h1>
-        <img src="images/service1.jpg" alt="Service">
-        <ul>
-            <li>Web Development</li>
-            <li>Graphic Design</li>
-            <li>SEO Optimization</li>
-        </ul>
-    `,
-    portfolio: `
-        <h1>Our Portfolio</h1>
-        <img src="images/portfolio2.jpg" alt="Portfolio">
-        <p>Check out some of our best projects.</p>
-    `,
-    pricing: `
-        <h1>Pricing Plans</h1>
-        <img src="images/service1.jpg" alt="Pricing">
-        <p>We offer affordable pricing for all businesses.</p>
+    
     `,
     blog: `
         <h1>Our Blog</h1>
