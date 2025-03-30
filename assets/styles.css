@@ -1,21 +1,18 @@
-/* General Styling */
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     text-align: center;
-}
-
-header {
-    background: #333;
-    color: white;
-    padding: 15px 0;
+    transition: background 0.3s;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    padding: 15px 0;
 }
 
 nav ul li {
@@ -27,11 +24,12 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff9800;
+    color: #ffd700;
 }
 
 main {
@@ -40,29 +38,32 @@ main {
     justify-content: center;
 }
 
-/* Grid Layout */
 .grid {
     display: grid;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
+    animation: fadeInUp 0.8s ease-in-out;
 }
 
 .home, .about, .contact {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
 }
 
 .services, .portfolio, .pricing, .blog {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
 }
 
-/* Boxes */
 .box {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .box img {
@@ -71,87 +72,30 @@ main {
     border-radius: 5px;
 }
 
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #ff9800;
+#cta {
+    margin: 40px 0;
+    background: #007bff;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#cta button {
+    background: #ffd700;
     border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #e68a00;
-}
-
-#formMessage {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Fade-in Animation */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Image Slideshow */
-.image-container {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-}
-
-.slide-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: opacity 1s;
-    opacity: 0;
-}
-
-.cta-container {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #ff9800;
-    color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #e68a00;
-    transform: scale(1.05);
+#cta button:hover {
+    background: #ffcc00;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
