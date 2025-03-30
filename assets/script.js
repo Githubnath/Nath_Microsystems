@@ -1,156 +1,86 @@
-// Content for different pages
-
 document.addEventListener("DOMContentLoaded", function () {
-    // Function to load content dynamically
     function loadPage(page) {
         const content = document.getElementById("content");
+        content.classList.remove("fade-in");
 
-        if (page === "services" || page === "pricing" || page === "portfolio") {
-            content.innerHTML = `
-                <section class="container">
-                    <div class="box">
-                        <h3>Heading 1</h3>
-                        <img src="image1.jpg" alt="Image 1">
-                        <p>Description for box 1.</p>
-                    </div>
-                    <div class="box">
-                        <h3>Heading 2</h3>
-                        <img src="image2.jpg" alt="Image 2">
-                        <p>Description for box 2.</p>
-                    </div>
-                    <div class="box">
-                        <h3>Heading 3</h3>
-                        <img src="image3.jpg" alt="Image 3">
-                        <p>Description for box 3.</p>
-                    </div>
-                    <div class="box">
-                        <h3>Heading 4</h3>
-                        <img src="image4.jpg" alt="Image 4">
-                        <p>Description for box 4.</p>
-                    </div>
-                    <div class="box">
-                        <h3>Heading 5</h3>
-                        <img src="image5.jpg" alt="Image 5">
-                        <p>Description for box 5.</p>
-                    </div>
-                    <div class="box">
-                        <h3>Heading 6</h3>
-                        <img src="image6.jpg" alt="Image 6">
-                        <p>Description for box 6.</p>
-                    </div>
-                </section>
-            `;
-        }
+        setTimeout(() => {
+            let html = `<h2>${page.charAt(0).toUpperCase() + page.slice(1)}</h2><div class='grid ${page}'>`;
+
+            if (page === 'contact') {
+                html += `
+                    <form id='contactForm'>
+                        <label for='name'>Name:</label>
+                        <input type='text' id='name' name='name' required>
+
+                        <label for='email'>Email:</label>
+                        <input type='email' id='email' name='email' required>
+
+                        <label for='message'>Message:</label>
+                        <textarea id='message' name='message' required></textarea>
+
+                        <button type='submit'>Send Message</button>
+                        <p id='formMessage'></p>
+                    </form>`;
+            } else {
+                for (let i = 1; i <= (page === 'home' || page === 'about' || page === 'contact' ? 4 : 6); i++) {
+                    html += `
+                        <div class='box'>
+                            <h3>${page} ${i}</h3>
+                            <div class='image-container'>
+                                <img class='slide-image' src='https://via.placeholder.com/150' alt='${page} ${i}'>
+                            </div>
+                            <p>Description for ${page} ${i}.</p>
+                        </div>`;
+                }
+            }
+            html += `</div>`;
+            content.innerHTML = html;
+            content.classList.add("fade-in");
+
+            if (page === 'contact') {
+                setupContactForm();
+            } else {
+                initiateSlideshow();
+            }
+        }, 300);
     }
 
-    // Simulate navigation - Example: listen for menu clicks
+    function initiateSlideshow() {
+        const images = document.querySelectorAll('.slide-image');
+        let index = 0;
+        setInterval(() => {
+            images.forEach(img => img.style.opacity = '0');
+            images[index].style.opacity = '1';
+            index = (index + 1) % images.length;
+        }, 2000);
+    }
+
+    function setupContactForm() {
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            let name = document.getElementById('name').value.trim();
+            let email = document.getElementById('email').value.trim();
+            let message = document.getElementById('message').value.trim();
+            let formMessage = document.getElementById('formMessage');
+
+            if (name === '' || email === '' || message === '') {
+                formMessage.textContent = 'Please fill out all fields!';
+                formMessage.style.color = 'red';
+            } else {
+                formMessage.textContent = 'Message sent successfully!';
+                formMessage.style.color = 'green';
+                document.getElementById('contactForm').reset();
+            }
+        });
+    }
+
     document.querySelectorAll(".nav-link").forEach(link => {
         link.addEventListener("click", function (event) {
             event.preventDefault();
-            const page = this.getAttribute("data-page");
-            loadPage(page);
+            loadPage(this.getAttribute("data-page"));
         });
     });
-});
 
-const pages = {
-    home: `
-        <h1>Welcome to Nath Microsystems</h1>
-	  <h2>Top Web Development Company: Elevating Your Digital Presence
-</h2>
-        <img src="images/home.jpg" alt="Home">
-        <p>We build future-proof and innovative solutions to foster your startup’s growth. Speed up your business growth with our full range of customer-centric, high-performance web development services. Nath Microsystems transforms vision into seamless web experiences so your website can compete well within the current industry. As the best web development company in Nigeria, we guarantee to get you more customers and help you grow faster.</p>
-    `,
-    about: `
-        <h1>About Us</h1>
-	<img src="images/portfolio1.PNG" alt="About">
-        <img src="images/about.jpg" alt="About Us">
-        <p>Nath Microsystems is a tech firm; which offer a wide range of affordable web design, software development and marketing services. Nath Microsystems develops, design and deploy websites and software applications. Such as: Responsive websites, E - commerce websites, Block chain websites etc. Our services include; development and deployment of software applications, Testing and improving the design of websites, maintaining the appearance of websites by enforcing content standards, designing visual imagery for websites and ensuring that they are in line with branding for clients.
-Nath Microsystems is a tech firm established in 2015 and managed by a team of dedicated professionals led by Engr Emenike Nathaniel (Founder/CEO). Over the years, the company has grown to become a high caliber website, Mobile Apps and Business Software Development power-house; serving both local and international clients. Our passion for technology and our expertise in harnessing the plethora of ways by which it can transform business has enable us to deliver incredible customer experiences. Start your next project with us today....A trial will convince you.
-</p>
-    `,
-    
-    `,
-    blog: `
-        <h1>Our Blog</h1>
-        <img src="images/portfolio2.PNG" alt="Blog">
-        <p>Read our latest industry insights.</p>
-    `,
-    contact: `
-        <h1>Contact Us</h1>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name">
-            <input type="email" id="email" placeholder="Your Email">
-            <textarea id="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-            <p id="formMessage"></p>
-        </form>
-    `
-};
-
-// Function to Load Pages Dynamically
-function loadPage(page) {
-    document.getElementById('content').innerHTML = pages[page];
-
-    // Attach form validation if contact page is loaded
-    if (page === 'contact') {
-        document.getElementById('contactForm').addEventListener('submit', handleFormSubmit);
-    }
-}
-
-// Form Handling & Validation
-function handleFormSubmit(event) {
-    event.preventDefault();
-
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-    const formMessage = document.getElementById('formMessage');
-
-    // Validate fields
-    if (!name || !email || !message) {
-        formMessage.style.color = "red";
-        formMessage.textContent = "All fields are required!";
-        return;
-    }
-
-    // Simple email validation
-    if (!email.includes("@") || !email.includes(".")) {
-        formMessage.style.color = "red";
-        formMessage.textContent = "Enter a valid email!";
-        return;
-    }
-
-    // Simulate form submission
-    setTimeout(() => {
-        formMessage.style.color = "green";
-        formMessage.textContent = "Message sent successfully!";
-        document.getElementById('contactForm').reset();
-    }, 1000);
-}
-
-// Load home page initially
-window.onload = () => loadPage('home');
-
-document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll("img");
-
-    const revealOnScroll = () => {
-        images.forEach(img => {
-            const rect = img.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 50) {
-                img.classList.add("visible");
-            }
-        });
-    };
-
-    // Apply class to all images
-    images.forEach(img => img.classList.add("slide-image"));
-
-    // Listen for scroll events
-    window.addEventListener("scroll", revealOnScroll);
-
-    // Trigger the function on load
-    revealOnScroll();
+    loadPage("home");
 });
 

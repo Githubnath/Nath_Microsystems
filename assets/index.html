@@ -3,32 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nath Microsystems</title>
+    <title>Company Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- Navigation Menu -->
-    <nav>
-        <div class="logo">Nath Microsystems</div>
-        <ul>
-            <li><a href="#" onclick="loadPage('home')">Home</a></li>
-            <li><a href="#" onclick="loadPage('about')">About</a></li>
-            <li><a href="#" onclick="loadPage('services')">Services</a></li>
-            <li><a href="#" onclick="loadPage('portfolio')">Portfolio</a></li>
-            <li><a href="#" onclick="loadPage('pricing')">Pricing</a></li>
-            <li><a href="#" onclick="loadPage('blog')">Blog</a></li>
-            <li><a href="#" onclick="loadPage('contact')">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Dynamic Content Area -->
-    <div id="content">
-        <!-- Pages will load here dynamically -->
-    </div>
-
-    <script src="script.js"></script>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                <li><a href="#" class="nav-link" data-page="services">Services</a></li>
+                <li><a href="#" class="nav-link" data-page="portfolio">Portfolio</a></li>
+                <li><a href="#" class="nav-link" data-page="pricing">Pricing</a></li>
+                <li><a href="#" class="nav-link" data-page="blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="content" class="fade-in">
+        <!-- Dynamic content will be loaded here -->
+    </main>
+    
 <section class="cta">
     <h2>Ready to Work with Us?</h2>
     <p>Contact us today and let's build something amazing together!</p>
