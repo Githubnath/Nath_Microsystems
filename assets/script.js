@@ -95,3 +95,25 @@ function handleFormSubmit(event) {
 // Load home page initially
 window.onload = () => loadPage('home');
 
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll("img");
+
+    const revealOnScroll = () => {
+        images.forEach(img => {
+            const rect = img.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50) {
+                img.classList.add("visible");
+            }
+        });
+    };
+
+    // Apply class to all images
+    images.forEach(img => img.classList.add("slide-image"));
+
+    // Listen for scroll events
+    window.addEventListener("scroll", revealOnScroll);
+
+    // Trigger the function on load
+    revealOnScroll();
+});
+

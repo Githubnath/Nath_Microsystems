@@ -84,3 +84,24 @@ img {
     background: #222;
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-image {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.slide-image.visible {
+    animation: slideIn 1s forwards;
+}
+
