@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const pages = {
         home: createGrid(2, [
-            { title: "Welcome to Our Company", img: "images/home1.jpg" },
-            { title: "Discover our innovations", img: "images/home2.jpg" },
-            { title: "Quality Services", img: "images/home3.jpg" },
-            { title: "Customer Satisfaction", img: "images/home4.jpg" }
+            { title: "Welcome To Nath Microsystems", img: "images/home.jpg" },
+           <p>Nath is my name </p>
+		{ title: "Discover our innovations", img: "images/service2.jpg" },
+            { title: "Quality Services", img: "images/service1.jpg" },
+            { title: "Customer Satisfaction", img: "images/portfolio2.jpg" }
         ]),
         about: createGrid(2, [
             { title: "Our Story", img: "images/about1.jpg" },
