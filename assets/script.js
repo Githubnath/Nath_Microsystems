@@ -25,11 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 for (let i = 1; i <= (page === 'home' || page === 'about' || page === 'contact' ? 4 : 6); i++) {
                     html += `
                         <div class='box'>
-                            <h3>${page} ${i}</h3>
+                            <h3> Software ${page} Development ${i}</h3>
                             <div class='image-container'>
-                                <img class='slide-image' src='https://github.com/Githubnath/Nath_Microsystems/blob/main/assets/images/home.jpg' alt='${page} ${i}'>
+                                <img class='slide-image' src=''https://via.placeholder.com/150' alt='${page} ${i}'>
                             </div>
-                            <p>Description for ${page} ${i}.</p>
+                            <p>We Design Websites ${page} We Develop apps ${i}.</p>
                         </div>`;
                 }
             }
