@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 for (let i = 1; i <= (page === 'home' || page === 'about' || page === 'contact' ? 4 : 6); i++) {
                     html += `
                         <div class='box'>
-                            <h3>Welcome To Nath Microsystems</h3>
+                            <h3>${page} ${i}</h3>
                             <div class='image-container'>
-                                <img class='slide-image' src='https://github.com/Githubnath/Nath_Microsystems/blob/main/assets/images/home.jpg' alt='${Nath Microsystems} ${i}'>
+                                <img class='slide-image' src='https://github.com/Githubnath/Nath_Microsystems/blob/main/assets/images/home.jpg' alt='${page} ${i}'>
                             </div>
                             <p>Description for ${page} ${i}.</p>
                         </div>`;
@@ -81,27 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    loadPage("switch (page) {
-    case "home":
-        html += `
-            <div class='box'>
-                <h3>Welcome to Our Company</h3>
-                <img src="images/home-main.jpg" alt="Company Overview">
-                <p>We provide top-notch services tailored for your needs.</p>
-            </div>`;
-        break;
-
-    case "about":
-        html += `
-            <div class='box'>
-                <h3>Our Story</h3>
-                <img src="images/about-us.jpg" alt="About Us">
-                <p>Our company was founded to bring innovation and excellence.</p>
-            </div>`;
-        break;
-}
-
-");
+    loadPage("home");
 
 });
-
