@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const pages = {
         home: createGrid(2, [
-            { title: "Welcome To Nath Microsystems", img: "images/home1.png", desc: "Learn more about our company values and vision." },
+            { title: "Top Web Development Company", img: "images/home1.png", desc: "Learn more about our company values and vision." },
             { title: "Discover our innovations", img: "images/home2.png", desc: "Explore the cutting-edge innovations we bring to the industry." },
             { title: "Quality Services", img: "images/home.jpg", desc: "Providing top-notch services to meet your business needs." },
             { title: "Customer Satisfaction", img: "images/home4.jpg", desc: "We prioritize customer satisfaction with dedicated support." }
