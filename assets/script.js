@@ -6,22 +6,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const pages = {
         home: createGrid(2, [
             { title: "Welcome To Nath Microsystems", img: "images/home.jpg", desc: "Learn more about our company values and vision." },
-            { title: "Discover our innovations", img: "images/home2.jpg", desc: "Explore the cutting-edge innovations we bring to the industry." },
+            { title: "Discover our innovations", img: "images/home2.png", desc: "Explore the cutting-edge innovations we bring to the industry." },
             { title: "Quality Services", img: "images/home3.jpg", desc: "Providing top-notch services to meet your business needs." },
             { title: "Customer Satisfaction", img: "images/home4.jpg", desc: "We prioritize customer satisfaction with dedicated support." }
         ]),
         about: createGrid(2, [
             { title: "Our Story", img: "images/about1.jpg", desc: "Discover our journey and how we started." },
-            { title: "Our Vision", img: "images/about2.jpg", desc: "Learn about our mission and future goals." },
+            { title: "Our Vision", img: "images/portfolio2.png", desc: "Learn about our mission and future goals." },
             { title: "Our Team", img: "images/about3.jpg", desc: "Meet the professionals behind our success." },
-            { title: "Our Achievements", img: "images/about4.jpg", desc: "Explore our accomplishments over the years." }
+            { title: "Our Achievements", img: "images/portfolio1.png", desc: "Explore our accomplishments over the years." }
         ]),
         contact: createContactPage(),
         services: createGrid(3, [
-            { title: "Web Development", img: "images/service1.jpg", desc: "Custom website development to enhance your business." },
-            { title: "App Development", img: "images/service2.jpg", desc: "Building innovative mobile applications tailored for you." },
-            { title: "SEO Optimization", img: "images/service3.jpg", desc: "Boost your online presence with our SEO strategies." },
-            { title: "Marketing", img: "images/service4.jpg", desc: "Reach your target audience effectively with our marketing services." },
+            { title: "Web Development", img: "images/service1.jpeg", desc: "Custom website development to enhance your business." },
+            { title: "App Development", img: "images/service2.png", desc: "Building innovative mobile applications tailored for you." },
+            { title: "SEO Optimization", img: "images/service3.png", desc: "Boost your online presence with our SEO strategies." },
+            { title: "Marketing", img: "images/service4.png", desc: "Reach your target audience effectively with our marketing services." },
             { title: "Branding", img: "images/service5.jpg", desc: "Create a unique identity for your business with branding solutions." },
             { title: "Consulting", img: "images/service6.jpg", desc: "Get expert advice to grow and optimize your business." }
         ]),
