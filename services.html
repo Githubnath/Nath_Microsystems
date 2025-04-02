@@ -1,0 +1,33 @@
+<section id="services">
+    <h2>Our Services</h2>
+    <p>We offer cutting-edge solutions for businesses of all sizes.</p>
+
+    <div class="service-list">
+        <div class="service-item">
+            <h3>Web Development</h3>
+            <p>We build fast, scalable, and secure web applications.</p>
+        </div>
+        <div class="service-item">
+            <h3>Mobile App Development</h3>
+            <p>Native and cross-platform mobile applications tailored for you.</p>
+        </div>
+        <div class="service-item">
+            <h3>Cloud Solutions</h3>
+            <p>Scalable cloud computing solutions for modern businesses.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Ensure the "Explore Our Services" button works dynamically
+        const exploreBtn = document.querySelector("#explore-btn");
+        if (exploreBtn) {
+            exploreBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                loadPage("services"); // Load services page dynamically
+            });
+        }
+    });
+</script>
+
