@@ -99,8 +99,26 @@ document.addEventListener("submit", (e) => {
         } else {
             document.getElementById("formMessage").textContent = "Please fill in all fields.";
         }
-   }	
- });
+ }	
+
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const page = e.target.getAttribute("data-page");
+        loadPage(page);
+    });
+});
+
+function loadPage(page) {
+    fetch(`../${page}.html`)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("content").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading page:", error));
+}
+
+    });
 
 
 
