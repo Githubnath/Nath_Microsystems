@@ -102,42 +102,6 @@ document.addEventListener("submit", (e) => {
     }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    loadPage("home"); // Load home page by default
 
-    // Attach event listeners for navigation links
-    document.querySelectorAll(".nav-link").forEach(link => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const page = e.target.getAttribute("data-page");
-            loadPage(page);
-        });
-    });
-
-    // Attach event listener for the CTA button
-    attachCTAEvent();
-});
-
-// Function to load pages dynamically
-function loadPage(page) {
-    fetch(`${page}.html`)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("content").innerHTML = data;
-            attachCTAEvent(); // Re-attach event listener after content change
-        })
-        .catch(error => console.error("Error loading page:", error));
-}
-
-// Function to attach CTA button event listener
-function attachCTAEvent() {
-    const ctaBtn = document.querySelector("#cta-btn");
-    if (ctaBtn) {
-        ctaBtn.addEventListener("click", (e) => {
-            e.preventDefault();
-            loadPage("contact"); // Load contact page dynamically
-        });
-    }
-}
 
 
