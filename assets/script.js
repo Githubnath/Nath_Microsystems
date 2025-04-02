@@ -99,8 +99,60 @@ document.addEventListener("submit", (e) => {
         } else {
             document.getElementById("formMessage").textContent = "Please fill in all fields.";
         }
-    }
+   }
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadPage("home"); // Ensure the home page loads by default
+
+    // Attach event listeners to navigation links
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const page = e.target.getAttribute("data-page");
+            loadPage(page);
+        });
+    });
+
+    // Attach event listeners for Explore Services and Contact Us
+    attachDynamicEventListeners();
 });
+
+// Function to dynamically load pages
+function loadPage(page) {
+    fetch(`../${page}.html`) // Fetch the correct HTML file
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Page not found: ${page}.html`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById("content").innerHTML = data;
+            attachDynamicEventListeners(); // Reattach button event listeners after loading content
+        })
+        .catch(error => console.error("Error loading page:", error));
+}
+
+// Function to attach dynamic event listeners
+function attachDynamicEventListeners() {
+    const exploreBtn = document.querySelector("#explore-btn");
+    if (exploreBtn) {
+        exploreBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            loadPage("services"); // Load the services page dynamically
+        });
+    }
+
+    const contactFooterLink = document.querySelector("#footer-contact");
+    if (contactFooterLink) {
+        contactFooterLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            loadPage("contact"); // Load the contact page dynamically
+        });
+    }
+}
+	
+ });
 
 
 
