@@ -297,3 +297,87 @@ main {
     }
 }
 
+/* Centering the Contact Form */
+#contact-form {
+    max-width: 600px;
+    margin: 50px auto; /* Centers the form */
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Smooth shadow for depth */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#contact-form:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+/* Form Title */
+#contact-form h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Focus Effect on Inputs */
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+#contact-form button {
+    width: 100%;
+    background: #007BFF;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect on Submit Button */
+#contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #contact-form {
+        max-width: 90%;
+        padding: 25px;
+    }
+
+    #contact-form h2 {
+        font-size: 1.8rem;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    #contact-form button {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+}
+
