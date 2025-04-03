@@ -223,3 +223,77 @@ main {
     }
 }
 
+/* Call-to-Action (CTA) Section */
+#cta {
+    background: #007BFF; /* Eye-catching blue background */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+/* CTA Headings - Bigger & Bold */
+#cta h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* CTA Paragraph - Readable */
+#cta p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* CTA Button Styling */
+#cta .btn {
+    display: inline-block;
+    background: #FF9800; /* Contrasting orange for visibility */
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect for CTA Button */
+#cta .btn:hover {
+    background: #e68900;
+}
+
+/* Responsive CTA Adjustments */
+@media (max-width: 768px) {
+    #cta h2 {
+        font-size: 2rem;
+    }
+
+    #cta p {
+        font-size: 1.2rem;
+    }
+
+    #cta .btn {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cta h2 {
+        font-size: 1.8rem;
+    }
+
+    #cta p {
+        font-size: 1.1rem;
+    }
+
+    #cta .btn {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+}
+
