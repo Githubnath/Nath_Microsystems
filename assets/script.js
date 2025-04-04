@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { title: "Top Web Development Company", img: "images/home1.png", desc: "Learn more about our company values and vision." },
             { title: "Discover our innovations", img: "images/home2.png", desc: "Explore the cutting-edge innovations we bring to the industry." },
             { title: "Quality Services", img: "images/home.jpg", desc: "Providing top-notch services to meet your business needs." },
-            { title: "Customer Satisfaction", img: "images/home4.jpg", desc: "We prioritize customer satisfaction with dedicated support." }
+            { title: "Customer Satisfaction", img: "images/home4.png", desc: "We prioritize customer satisfaction with dedicated support." }
         ]),
         about: createGrid(2, [
             { title: "Our Story", img: "images/about.jpg", desc: "Discover our journey and how we started." },
@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
             { title: "Web Development", img: "images/service1.jpeg", desc: "Custom website development to enhance your business." },
             { title: "App Development", img: "images/services3.jpg", desc: "Building innovative mobile applications tailored for you." },
             { title: "SEO Optimization", img: "images/services2.png", desc: "Boost your online presence with our SEO strategies." },
-            { title: "Marketing", img: "images/services4.jpg", desc: "Reach your target audience effectively with our marketing services." },
-            { title: "Branding", img: "images/service5.jpg", desc: "Create a unique identity for your business with branding solutions." },
-            { title: "Consulting", img: "images/service6.jpg", desc: "Get expert advice to grow and optimize your business." }
+            { title: "Marketing", img: "images/services4.png", desc: "Reach your target audience effectively with our marketing services." },
+            { title: "Branding", img: "images/service5.png", desc: "Create a unique identity for your business with branding solutions." },
+            { title: "Consulting", img: "images/service6.png", desc: "Get expert advice to grow and optimize your business." }
         ]),
         portfolio: createGrid(3, [
             { title: "Project One", img: "images/portfolio1.jpg", desc: "A successful project that delivered outstanding results." },
