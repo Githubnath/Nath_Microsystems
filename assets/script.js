@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
             { title: "App Development", img: "images/services3.jpg", desc: "Building innovative mobile applications tailored for you." },
             { title: "SEO Optimization", img: "images/services2.png", desc: "Boost your online presence with our SEO strategies." },
             { title: "Marketing", img: "images/services4.png", desc: "Reach your target audience effectively with our marketing services." },
-            { title: "Branding", img: "images/service5.png", desc: "Create a unique identity for your business with branding solutions." },
-            { title: "Consulting", img: "images/service6.png", desc: "Get expert advice to grow and optimize your business." }
+            { title: "Branding", img: "images/services5.png", desc: "Create a unique identity for your business with branding solutions." },
+            { title: "Consulting", img: "images/services6.png", desc: "Get expert advice to grow and optimize your business." }
         ]),
         portfolio: createGrid(3, [
             { title: "Project One", img: "images/portfolio1.jpg", desc: "A successful project that delivered outstanding results." },
