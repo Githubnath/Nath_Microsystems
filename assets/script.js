@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { title: "Consulting", img: "images/services6.png", desc: "Get expert advice to grow and optimize your business." }
         ]),
         portfolio: createGrid(3, [
-            { title: "Project One", img: "images/portfolio1.png", desc: "A successful project that delivered outstanding results." },
+            { title: "Project One", img: "images/portfolio1.png", desc: "Nath Microsystems is a cutting-edge tech solutions provider specializing in innovative software development, web and mobile app design, and digital transformation services. With a strong focus on creativity, functionality, and user experience, Nath Microsystems delivers tailored technology solutions that help businesses grow, streamline operations, and stay ahead in a digital world. This project showcases their commitment to quality, precision, and forward-thinking design.     A successful project that delivered outstanding results." },
             { title: "Project Two", img: "images/portfolio2.png", desc: "Innovative design and development in action." },
             { title: "Project Three", img: "images/portfolio3.png", desc: "Strategic execution for maximum impact." },
             { title: "Project Four", img: "images/portfolio4.png", desc: "Delivering excellence in every aspect of the project." },
