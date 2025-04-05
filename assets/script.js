@@ -26,20 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
             { title: "Consulting", img: "images/services6.png", desc: "Get expert advice to grow and optimize your business." }
         ]),
         portfolio: createGrid(3, [
-            { title: "Project One", img: "images/portfolio1.jpg", desc: "A successful project that delivered outstanding results." },
-            { title: "Project Two", img: "images/portfolio2.jpg", desc: "Innovative design and development in action." },
-            { title: "Project Three", img: "images/portfolio3.jpg", desc: "Strategic execution for maximum impact." },
-            { title: "Project Four", img: "images/portfolio4.jpg", desc: "Delivering excellence in every aspect of the project." },
+            { title: "Project One", img: "images/portfolio1.png", desc: "A successful project that delivered outstanding results." },
+            { title: "Project Two", img: "images/portfolio2.png", desc: "Innovative design and development in action." },
+            { title: "Project Three", img: "images/portfolio3.png", desc: "Strategic execution for maximum impact." },
+            { title: "Project Four", img: "images/portfolio4.png", desc: "Delivering excellence in every aspect of the project." },
             { title: "Project Five", img: "images/portfolio5.jpg", desc: "Creative solutions for modern business challenges." },
             { title: "Project Six", img: "images/portfolio6.jpg", desc: "A top-tier project showcasing our expertise." }
         ]),
         pricing: createGrid(3, [
-            { title: "Basic Plan", img: "images/pricing1.jpg", desc: "An affordable plan with essential features." },
-            { title: "Standard Plan", img: "images/pricing2.jpg", desc: "A balanced plan for growing businesses." },
-            { title: "Premium Plan", img: "images/pricing3.jpg", desc: "Advanced features for expanding enterprises." },
-            { title: "Enterprise Plan", img: "images/pricing4.jpg", desc: "Comprehensive solutions for large businesses." },
-            { title: "Custom Plan", img: "images/pricing5.jpg", desc: "Tailored plans to fit your unique needs." },
-            { title: "One-Time Plan", img: "images/pricing6.jpg", desc: "A one-time package for specific projects." }
+            { title: "Basic Plan", img: "images/pricing1.png", desc: "An affordable plan with essential features." },
+            { title: "Standard Plan", img: "images/pricing2.png", desc: "A balanced plan for growing businesses." },
+            { title: "Premium Plan", img: "images/pricing3.png", desc: "Advanced features for expanding enterprises." },
+            { title: "Enterprise Plan", img: "images/pricing4.png", desc: "Comprehensive solutions for large businesses." },
+            { title: "Custom Plan", img: "images/pricing5.png", desc: "Tailored plans to fit your unique needs." },
+            { title: "One-Time Plan", img: "images/pricing6.png", desc: "A one-time package for specific projects." }
         ]),
         blog: createGrid(3, [
             { title: "Latest News", img: "images/blog1.jpg", desc: "Stay updated with industry news and updates." },
