@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
             { title: "Customer Satisfaction", img: "images/home4.png", desc: "We prioritize customer satisfaction with dedicated support." }
         ]),
         about: createGrid(2, [
-            { title: "Our Story", img: "images/about1.png", desc: "Discover our journey and how we started." },
+            { title: "Our Story", img: "images/about3.png", desc: "Discover our journey and how we started." },
             { title: "Our Vision", img: "images/portfolio2.png", desc: "Learn about our mission and future goals." },
-            { title: "Our Team", img: "images/about3.png", desc: "Meet the professionals behind our success." },
+            { title: "Our Team", img: "images/about1.png", desc: "Meet the professionals behind our success." },
             { title: "Our Achievements", img: "images/portfolio1.png", desc: "Explore our accomplishments over the years." }
         ]),
         contact: createContactPage(),
