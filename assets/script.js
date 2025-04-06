@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ]),
         about: createGrid(2, [
             { title: "Our Story", img: "images/about3.png", desc: "Discover our journey and how we started." },
-            { title: "Our Vision", img: "images/about2.png", desc: "Learn about our mission and future goals." },
+            { title: "Our Vision", img: "images/about2.png", desc: "Looking ahead, we aim to expand our service offerings by integrating more advanced technologies such as AI-driven web components, scalable backend solutions, and cross-platform mobile applications. Our goal is to become a leading tech partner for businesses across Africa and globally, helping them achieve digital excellence through tailored software solutions, top-tier content, and continuous innovation." },
             { title: "Our Team", img: "images/about1.png", desc: "Meet the professionals behind our success." },
             { title: "Our Achievements", img: "images/about4.png", desc: "Explore our accomplishments over the years." }
         ]),
