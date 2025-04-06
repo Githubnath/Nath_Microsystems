@@ -88,25 +88,7 @@ function createContactPage() {
         </div>`;
 }
 
-document.addEventListener("submit", (e) => {
-    if (e.target.id === "contactForm") {
-        e.preventDefault();
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-        if (name && email && message) {
-            document.getElementById("formMessage").textContent = "Thank you, " + name + ", for contacting us!";
-        } else {
-            document.getElementById("formMessage").textContent = "Please fill in all fields.";
-        }
-    }	
-  });
-
-// script.js
-
-// Wait for the DOM to be fully loaded before running the script
-document.addEventListener("DOMContentLoaded", function () {
-  const showMoreBtn = document.getElementById('show-more-btn');
+const showMoreBtn = document.getElementById('show-more-btn');
   const moreAbout = document.getElementById('more-about');
 
   // Add an event listener to the "Learn More" button
@@ -121,6 +103,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("submit", (e) => {
+    if (e.target.id === "contactForm") {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        if (name && email && message) {
+            document.getElementById("formMessage").textContent = "Thank you, " + name + ", for contacting us!";
+        } else {
+            document.getElementById("formMessage").textContent = "Please fill in all fields.";
+        }
+    }	
+  });
 
 
 
