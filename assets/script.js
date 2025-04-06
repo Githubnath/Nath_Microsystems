@@ -102,6 +102,25 @@ document.addEventListener("submit", (e) => {
     }	
   });
 
+// script.js
+
+// Wait for the DOM to be fully loaded before running the script
+document.addEventListener("DOMContentLoaded", function () {
+  const showMoreBtn = document.getElementById('show-more-btn');
+  const moreAbout = document.getElementById('more-about');
+
+  // Add an event listener to the "Learn More" button
+  showMoreBtn.addEventListener('click', function () {
+    // Toggle the visibility of the "more about" section
+    if (moreAbout.classList.contains('hidden')) {
+      moreAbout.classList.remove('hidden');
+      showMoreBtn.textContent = 'Show Less'; // Change button text
+    } else {
+      moreAbout.classList.add('hidden');
+      showMoreBtn.textContent = 'Learn More'; // Change button text back
+    }
+  });
+});
 
 
 
