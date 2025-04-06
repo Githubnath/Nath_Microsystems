@@ -380,4 +380,24 @@ main {
   filter: invert(1);
 }
 
+/* Hide the additional about content initially */
+.hidden {
+  display: none;
+}
+
+/* Style for the "Learn More" button */
+.show-more-btn {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.show-more-btn:hover {
+  background-color: #128c7e;
+}
+
 
