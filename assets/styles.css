@@ -419,3 +419,55 @@ main {
   background-color: #128c7e;
 }
 
+.web-process-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  margin: 40px 0;
+}
+
+.web-process-section h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.process-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+}
+
+.process-card h3 {
+  font-size: 20px;
+  color: #128c7e;
+  margin-bottom: 10px;
+}
+
+.process-card p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+
