@@ -120,4 +120,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const learnMoreBtn = document.getElementById("learn-more-btn");
+  const learnMoreContent = document.getElementById("learn-more-content");
+
+  if (learnMoreBtn && learnMoreContent) {
+    learnMoreBtn.addEventListener("click", function () {
+      learnMoreContent.classList.toggle("hidden");
+      learnMoreBtn.textContent =
+        learnMoreContent.classList.contains("hidden") ? "Learn More" : "Show Less";
+    });
+  }
+});
+
 
