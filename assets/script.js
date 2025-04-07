@@ -102,5 +102,22 @@ document.addEventListener("submit", (e) => {
     }	
   });
 
+// Learn More section on index.html
+document.addEventListener("DOMContentLoaded", function () {
+  const learnMoreBtn = document.getElementById("learn-more-btn");
+  const learnMoreContent = document.getElementById("learn-more-content");
+
+  if (learnMoreBtn && learnMoreContent) {
+    learnMoreBtn.addEventListener("click", function () {
+      if (learnMoreContent.classList.contains("hidden")) {
+        learnMoreContent.classList.remove("hidden");
+        learnMoreBtn.textContent = "Show Less";
+      } else {
+        learnMoreContent.classList.add("hidden");
+        learnMoreBtn.textContent = "Learn More";
+      }
+    });
+  }
+});
 
 
