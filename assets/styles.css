@@ -106,7 +106,7 @@ main {
 }
 
 .btn {
-    background-color: #ff6600;
+    background-color: #0066cc;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -116,7 +116,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #cc5500;
+    background-color: #0066cc;
 }
 
 /* Services Section - Bigger, More Readable */
@@ -138,10 +138,10 @@ main {
 /* Service Items - Larger & More Professional */
 .service-item {
     background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 50px;
+    border-radius: 20px;
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
-    max-width: 400px;
+    max-width: 500px;
     flex: 1;
     text-align: left;
     transition: transform 0.3s ease-in-out;
@@ -203,7 +203,7 @@ main {
 
 /* Call-to-Action (CTA) Section */
 #cta {
-    background: #007BFF; /* Eye-catching blue background */
+    background: #0066cc; /* Eye-catching blue background */
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -229,7 +229,7 @@ main {
 /* CTA Button Styling */
 #cta .btn {
     display: inline-block;
-    background: #FF9800; /* Contrasting orange for visibility */
+    background: #0066cc; /* Contrasting orange for visibility */
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
@@ -241,7 +241,7 @@ main {
 
 /* Hover Effect for CTA Button */
 #cta .btn:hover {
-    background: #e68900;
+    background: #ff0000;
 }
 
 /* Responsive CTA Adjustments */
@@ -321,7 +321,7 @@ main {
 /* Submit Button */
 #contact-form button {
     width: 100%;
-    background: #007BFF;
+    background: #0066cc;
     color: white;
     padding: 15px;
     border: none;
@@ -333,7 +333,7 @@ main {
 
 /* Hover Effect on Submit Button */
 #contact-form button:hover {
-    background: #0056b3;
+    background: #ff0000;
 }
 
 /* Responsive Adjustments */
@@ -387,7 +387,7 @@ main {
 
 /* Style for the "Learn More" button */
 .show-more-btn {
-  background-color: #25d366;
+  background-color: #0066cc;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -397,7 +397,7 @@ main {
 }
 
 .show-more-btn:hover {
-  background-color: #128c7e;
+  background-color: #ff0000;
 }
 
 .hidden {
@@ -405,7 +405,7 @@ main {
 }
 
 .learn-more-btn {
-  background-color: #25d366;
+  background-color: #0066cc;
   color: white;
   border: none;
   padding: 10px 18px;
@@ -416,7 +416,7 @@ main {
 }
 
 .learn-more-btn:hover {
-  background-color: #128c7e;
+  background-color: #ff0000;
 }
 
 .web-process-section {
