@@ -642,13 +642,13 @@ main {
 }
 
 .logo-container {
-  padding: 15px;
+  padding: 10px;
   text-align: left;
-  background-color: #0000ff;
+  background-color: #0D98DA;
 }
 
 .logo {
-  width: 150px;
+  width: 50px;
   height: auto;
 }
 
