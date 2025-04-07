@@ -535,4 +535,52 @@ main {
   display: none;
 }
 
+/* Styling for the "Who We Are" Section */
+.who-we-are {
+  padding: 50px 20px;
+  background-color: #f7f7f7; /* Light gray background for the section */
+  border-radius: 16px;
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.who-we-are h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.who-we-are p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.who-we-are strong {
+  color: #128c7e; /* Highlight company name and important keywords */
+}
+
+.who-we-are p:last-of-type {
+  margin-bottom: 0; /* Remove margin for the last paragraph */
+}
+
+@media (max-width: 768px) {
+  .who-we-are h2 {
+    font-size: 28px;
+  }
+
+  .who-we-are p {
+    font-size: 16px;
+  }
+}
+
+
 
