@@ -120,5 +120,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.getElementById('toggleBtn').addEventListener('click', function () {
+  const text = document.getElementById('whoText');
+  const btn = document.getElementById('toggleBtn');
+  
+  if (text.classList.contains('collapsed')) {
+    text.classList.remove('collapsed');
+    btn.textContent = 'See less';
+  } else {
+    text.classList.add('collapsed');
+    btn.textContent = 'See more';
+  }
+});
+
 
 
