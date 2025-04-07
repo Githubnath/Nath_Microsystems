@@ -538,7 +538,7 @@ main {
 /* Styling for the "Who We Are" Section */
 .who-we-are {
   padding: 50px 20px;
-  background-color: #f7f7f7; /* Light gray background for the section */
+  background-color: #0066cc; /* Light gray background for the section */
   border-radius: 16px;
   max-width: 1000px;
   margin: 40px auto;
@@ -548,14 +548,14 @@ main {
 
 .who-we-are h2 {
   font-size: 32px;
-  color: #222;
+  color: #ffffff;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
 .who-we-are p {
   font-size: 18px;
-  color: #555;
+  color: #ffffff;
   line-height: 1.8;
   margin-bottom: 20px;
   max-width: 900px;
@@ -565,7 +565,7 @@ main {
 }
 
 .who-we-are strong {
-  color: #128c7e; /* Highlight company name and important keywords */
+  color: #ffffff; /* Highlight company name and important keywords */
 }
 
 .who-we-are p:last-of-type {
