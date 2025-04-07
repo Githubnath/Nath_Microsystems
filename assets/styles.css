@@ -137,7 +137,7 @@ main {
 
 /* Service Items - Larger & More Professional */
 .service-item {
-    background: #ffffff;
+    background: #00000d;
     padding: 50px;
     border-radius: 20px;
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
@@ -154,7 +154,7 @@ main {
 /* Bigger & Bolder Headings */
 .service-item h3 {
     font-size: 2rem; /* Increased size */
-    color: #222;
+    color: #ffffff;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -162,7 +162,7 @@ main {
 /* Bigger & More Readable Paragraphs */
 .service-item p {
     font-size: 1.3rem; /* Increased size */
-    color: #444;
+    color: #ffffff;
     line-height: 1.8;
 }
 
@@ -206,7 +206,7 @@ main {
     background: #0066cc; /* Eye-catching blue background */
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 16px 20px;
     border-radius: 10px;
     margin: 40px auto;
     max-width: 1200px;
