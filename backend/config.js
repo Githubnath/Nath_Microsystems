@@ -7,8 +7,8 @@ module.exports = {
   mongoURI: process.env.MONGO_URI || 'mongodb://localhost:27017/nathmicrosystems',
   jwtSecret: process.env.JWT_SECRET || 'K4zq1WkJz2@rTY7pVm9!uFhXs#3LcPwNx$QeZg8TbRmD',
   email: {
-    user: process.env.EMAIL_USER || 'your_email@example.com',
-    pass: process.env.EMAIL_PASS || 'your_email_password'
+    user: process.env.EMAIL_USER || 'emenike.nathaniel@gmail.com',
+    pass: process.env.EMAIL_PASS || 'yriq oqzm agmw iler'
   },
   clientUrl: process.env.CLIENT_URL || 'http://localhost:3000'
 };
