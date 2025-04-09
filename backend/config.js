@@ -10,8 +10,7 @@ module.exports = {
     user: process.env.EMAIL_USER || 'emenike.nathaniel@gmail.com',
     pass: process.env.EMAIL_PASS || 'yriq oqzm agmw iler'
   },
-  clientUrl: process.env.CLIENT_URL || 'http://localhost:3000'
+  clientUrl: process.env.CLIENT_URL || 'https://nath-microsystems.netlify.app'
 };
-'
-};
+
 
