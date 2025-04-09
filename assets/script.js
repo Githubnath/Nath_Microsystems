@@ -133,5 +133,9 @@ document.getElementById('toggleBtn').addEventListener('click', function () {
   }
 });
 
+function toggleMenu() {
+  document.getElementById("rightMenu").classList.toggle("open");
+}
+
 
 
