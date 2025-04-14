@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 const User = require('../models/User');
 const config = require('../config');
-const sendEmail = require('../utils/emailService');
+const sendEmail = require('../utils/sendEmail');  // Updated import path for sendEmail
 
 // Register a new user
 exports.register = async (req, res) => {
@@ -46,7 +46,6 @@ exports.login = async (req, res) => {
 // Send password reset email
 exports.forgotPassword = async (req, res) => {
   const { email } = req.body;
-
   try {
     const user = await User.findOne({ email });
     if (!user) return res.status(404).json({ message: 'User not found.' });
@@ -66,7 +65,8 @@ exports.forgotPassword = async (req, res) => {
       <p>This link will expire in 1 hour.</p>
     `;
 
-    await sendEmail(email, 'Password Reset Request', html);
+    // Send the password reset email
+    await sendEmail({ to: email, subject: 'Password Reset Request', text: html });
     res.json({ message: 'Reset link sent to your email.' });
   } catch (error) {
     res.status(500).json({ message: 'Failed to send reset email.', error });
