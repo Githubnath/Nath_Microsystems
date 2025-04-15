@@ -741,9 +741,9 @@ main {
   }
 }
 
-/* Hamburger styles */ .hamburger { font-size: 28px; cursor: pointer; display: block; padding: 10px; z-index: 1001; position: fixed; top: 20px; right: 20px; background-color: #003366; color: #fff; border-radius: 6px; }
+/* Hamburger styles */ .hamburger { font-size: 28px; cursor: pointer; display: block; padding: 10px; z-index: 1001; position: fixed; top: 20px; right: 20px; background-color: #0066cc; color: #fff; border-radius: 6px; }
 
-/* Right sliding menu */ .right-menu { position: fixed; right: -300px; top: 0; width: 260px; height: 100vh; background-color: #003366; color: #fff; padding-top: 60px; transition: right 0.3s ease; z-index: 1000; }
+/* Right sliding menu */ .right-menu { position: fixed; right: -300px; top: 0; width: 260px; height: 100vh; background-color: #0066cc; color: #fff; padding-top: 60px; transition: right 0.3s ease; z-index: 1000; }
 
 .right-menu.active { right: 0; }
 
