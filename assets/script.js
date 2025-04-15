@@ -137,5 +137,26 @@ function toggleMenu() {
   document.getElementById("rightMenu").classList.toggle("open");
 }
 
+const hamburger = document.getElementById('hamburger');
+const rightMenu = document.getElementById('rightMenu');
+const closeBtn = document.getElementById('closeBtn');
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Toggle menu open
+hamburger.addEventListener('click', () => {
+  rightMenu.classList.add('active');
+});
+
+// Close menu with close button
+closeBtn.addEventListener('click', () => {
+  rightMenu.classList.remove('active');
+});
+
+// Auto-close menu when a nav link is clicked
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    rightMenu.classList.remove('active');
+  });
+});
 
 

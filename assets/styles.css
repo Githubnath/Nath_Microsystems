@@ -677,3 +677,69 @@ main {
   border-radius: 12px;
 }
 
+/* Hamburger Styles */
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  color: #003366;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.right-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #003366;
+  padding: 60px 20px 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.right-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-menu ul li {
+  margin: 20px 0;
+}
+
+.right-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.right-menu.active {
+  right: 0;
+}
+
+/* Close button inside menu */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show hamburger only on small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .right-menu {
+    display: block;
+  }
+}
+
+
+
