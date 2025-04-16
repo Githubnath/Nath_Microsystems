@@ -257,7 +257,7 @@ main {
 
 /* Call-to-Action (CTA) Section */
 #cta {
-    background: #0066cc; /* Eye-catching blue background */
+    background: #00000dc; /* Eye-catching dark  background */
     color: white;
     text-align: center;
     padding: 15px;
@@ -541,7 +541,7 @@ main {
 
 .mission-preview p {
   font-size: 18px;
-  color: #ffffff;
+  color: #555;
   margin-bottom: 20px;
 }
 
