@@ -162,9 +162,9 @@ main {
 .btn {
     background-color: #ff0000;
     color: white;
-    padding: 15px 30px;
+    padding: 15px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1.2rem;
     transition: background 0.3s ease-in-out;
 }
@@ -260,8 +260,8 @@ main {
     background: #0066cc; /* Eye-catching blue background */
     color: white;
     text-align: center;
-    padding: 16px 20px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 8px;
     margin: 40px auto;
     max-width: 1200px;
 }
@@ -288,7 +288,7 @@ main {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 15px;
     border-radius: 8px;
     transition: background 0.3s ease-in-out;
 }
@@ -387,7 +387,7 @@ main {
 
 /* Hover Effect on Submit Button */
 #contact-form button:hover {
-    background: #ff0000;
+    background: #00000d;
 }
 
 /* Responsive Adjustments */
@@ -535,7 +535,7 @@ main {
 
 .mission-preview h2 {
   font-size: 28px;
-  color: #222;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -649,14 +649,14 @@ main {
 
 .full-story h2 {
   font-size: 32px;
-  color: #222;
+  color: #ffffff;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
 .full-story p {
   font-size: 18px;
-  color: #555;
+  color: #ffffff;
   line-height: 1.8;
   margin-bottom: 20px;
   max-width: 900px;
@@ -672,7 +672,7 @@ main {
 
 .full-story li {
   font-size: 18px;
-  color: #333;
+  color: #fffff;
   margin-bottom: 10px;
   line-height: 1.6;
 }
