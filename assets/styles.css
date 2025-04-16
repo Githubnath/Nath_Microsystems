@@ -15,8 +15,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #0066cc;
-  padding: 10px 5px;
-  border-radius: 6px;
+  padding: 2px 1px;
+  border-radius: 3px;
 }
 
 /* Logo */
@@ -27,9 +27,9 @@ body {
 }
 
 .logo {
-  width: 50px;
+  width: 10px;
   height: auto;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 /* Navigation */
@@ -44,7 +44,7 @@ body {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
-  gap: 2px;
+  gap: 0;
 }
 
 .main-nav ul li {
@@ -54,10 +54,10 @@ body {
 .main-nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   transition: color 0.3s ease;
-  padding: 6px 8px;
+  padding: 3px 5px;
 }
 
 .main-nav ul li a:hover {
@@ -73,16 +73,16 @@ body {
 
   .main-nav ul {
     flex-direction: column;
-    width: 50%;
+    width: 10%;
   }
 
   .main-nav ul li {
-    width: 50%;
+    width: 10%;
   }
 
   .main-nav ul li a {
     display: block;
-    width: 50%;
+    width: 10%;
   }
 }
 
