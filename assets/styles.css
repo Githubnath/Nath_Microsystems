@@ -257,7 +257,7 @@ main {
 
 /* Call-to-Action (CTA) Section */
 #cta {
-    background: #00000d; /* Eye-catching dark  background */
+    background: #00000d; /* Eye-catching dark background */
     color: white;
     text-align: center;
     padding: 15px;
@@ -295,7 +295,7 @@ main {
 
 /* Hover Effect for CTA Button */
 #cta .btn:hover {
-    background: #ff0000;
+    background: #00008B;
 }
 
 /* Responsive CTA Adjustments */
