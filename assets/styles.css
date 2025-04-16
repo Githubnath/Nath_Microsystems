@@ -14,9 +14,9 @@ body {
   flex-wrap: wrap; /* allow wrapping on small screens */
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(45deg, #007bff, #00c6ff);
-  padding: 10px 20px;
-  border-radius: 8px;
+  background: #0066cc;
+  padding: 10px 5px;
+  border-radius: 6px;
 }
 
 /* Logo */
@@ -44,7 +44,7 @@ body {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
-  gap: 15px;
+  gap: 2px;
 }
 
 .main-nav ul li {
@@ -57,7 +57,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   transition: color 0.3s ease;
-  padding: 8px 12px;
+  padding: 6px 8px;
 }
 
 .main-nav ul li a:hover {
@@ -73,16 +73,16 @@ body {
 
   .main-nav ul {
     flex-direction: column;
-    width: 100%;
+    width: 50%;
   }
 
   .main-nav ul li {
-    width: 100%;
+    width: 50%;
   }
 
   .main-nav ul li a {
     display: block;
-    width: 100%;
+    width: 50%;
   }
 }
 
