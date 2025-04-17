@@ -15,7 +15,7 @@ router.post('/initiate-payment', async (req, res) => {
         customer: { name, email },
         customizations: {
           title: "Nath Microsystems Payment",
-          logo: "https://nathmicrosystems.com.ng/logo.jpg",
+          logo: "https://res.cloudinary.com/dysixqpqx/image/upload/v1744927988/logo_lyvc9n.jpg",
         }
       },
       {
