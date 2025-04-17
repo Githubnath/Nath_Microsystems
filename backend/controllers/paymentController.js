@@ -35,7 +35,7 @@ exports.initiatePayment = async (req, res) => {
         customizations: {
           title: 'Nath Microsystems Payment',
           description: 'Payment for services',
-          logo: 'https://nathmicrosystems.com.ng/assets/logo.png', // Optional
+          logo: 'https://nathmicrosystems.com.ng/assets/logo.jpg', // Optional
         },
       },
       {
