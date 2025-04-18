@@ -1,4 +1,4 @@
-// utils/EmailService.js
+// utils/emailService.js
 
 const nodemailer = require('nodemailer');
 
