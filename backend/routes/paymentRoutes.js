@@ -11,11 +11,11 @@ router.post('/initiate-payment', async (req, res) => {
         tx_ref: `TX-${Date.now()}`,
         amount,
         currency,
-        redirect_url: 'https://yourdomain.com/payment-success',
+        redirect_url: 'https://nathmicrosystems.com.ng/payment-success',
         customer: { name, email },
         customizations: {
           title: "Nath Microsystems Payment",
-          logo: "https://your-domain.com/logo.png",
+          logo: "https://res.cloudinary.com/dysixqpqx/image/upload/v1744927988/logo_lyvc9n.jpg",
         }
       },
       {

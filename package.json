@@ -1,15 +1,15 @@
 {
   "name": "nath-backend-app",
   "version": "1.0.0",
+  "description": "Backend API for Nath Microsystems",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["node", "express", "backend", "nath"],
+  "author": "Nath Microsystems",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
@@ -20,4 +20,5 @@
     "mongoose": "^8.13.2",
     "nodemailer": "^6.10.0"
   }
+}
 }

@@ -1,16 +1,17 @@
 const express = require('express');
-const crypto = require('crypto');
 const router = express.Router();
 const Payment = require('../models/Payment');
 const sendEmail = require('../utils/sendEmail');
 
-router.post('/flutterwave', express.raw({ type: 'application/json' }), async (req, res) => {
-  const hash = crypto.createHmac('sha256', process.env.FLUTTERWAVE_SECRET_KEY).update(req.body).digest('hex');
+// Flutterwave webhook endpoint
+router.post('/flutterwave', express.json({ type: 'application/json' }), async (req, res) => {
   const signature = req.headers['verif-hash'];
 
-  if (!signature || signature !== hash) return res.status(401).send('Unauthorized');
+  if (!signature || signature !== process.env.FLUTTERWAVE_HASH_SECRET) {
+    return res.status(401).send('Unauthorized');
+  }
 
-  const payload = JSON.parse(req.body.toString());
+  const payload = req.body;
   const tx = payload.data;
 
   try {

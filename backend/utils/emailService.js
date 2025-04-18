@@ -23,4 +23,3 @@ transporter.verify((error, success) => {
 return transporter;
 };
 
-module.exports = createTransporter;
