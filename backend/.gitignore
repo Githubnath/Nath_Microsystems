@@ -1,5 +1,14 @@
-
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Node modules and logs
+node_modules/
+npm-debug.log
+.env
+
+# Elastic Beanstalk specific files
+!.elasticbeanstalk/
+!.elasticbeanstalk/*.yml
+
